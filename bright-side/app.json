@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "bright-side",
-    "slug": "bright-side",
+    "name": "BrightSide",
+    "slug": "BrightSide",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/cute_cat.gif",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#66ceff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
