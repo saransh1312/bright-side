@@ -4,14 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Explore from './components/explore/Explore';
-
-function Profile() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Profile!</Text>
-    </View>
-  );
-}
+import Profile from './components/profile/Profile';
 
 function Feed() {
   return (
@@ -39,7 +32,7 @@ function MyTabs() {
       labelStyle={{ fontSize: 12 }}
       style={{ backgroundColor: 'white' }}
     >
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Feed"
         component={Feed}
         options={{
@@ -48,12 +41,12 @@ function MyTabs() {
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Explore"
         component={Explore}
         options={{
-          tabBarLabel: 'Explore',
+          tabBarLabel: 'Home',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="magnify" color={color} size={26} />
           ),

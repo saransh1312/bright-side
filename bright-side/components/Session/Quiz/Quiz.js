@@ -11,15 +11,21 @@ export default function Quiz (props) {
             marginTop: 10,
             marginBottom: 5,
         }]}>
-            <View>
-                <Text>Lorem ipsum dolor sit amet. Ut provident libero et temporibus distinctio est asperiores corporis et natus quasi qui internos consequatur eos architecto voluptas et quisquam odio. Ea quasi impedit sed asperiores impedit ut nobis ipsa eum quibusdam praesentium eos perferendis laboriosam non corrupti tenetur sit labore quibusdam. At provident alias est expedita voluptate qui voluptatibus placeat ad voluptatem internos qui molestias fugiat. Id voluptas illum et voluptates omnis eum esse soluta ea ipsum tempore</Text>
+            <View style={{padding:10, margin:10}}>
+                <Text style={{ fontSize: 20 }}>Did you complete your work before cinema?</Text>
             </View>
             <View style={{
+                margin: 10,
                 flexDirection: "column",
                 justifyContent: "space-evenly"
             }}>
-                <Button title="Yes" onPress={() => props.nextElement(4)} style={{marginLeft:10, marginRight:10}}/>
-                <Button title="No"  onPress={() => props.nextElement(4)} style={{marginLeft:10, marginRight:10}}/>
+                <View style={{ margin:10 }} >
+                    <Button title="Yes" onPress={() => props.nextElement(4)} style={{margin:10, marginRight:10}}/>
+                </View>
+                <View style={{ margin:10}}>
+                    <Button title="No"  onPress={() => props.nextElement(4)} style={{margin:10, marginRight:10}}/>
+                </View>
+                
             </View>
         </View>
     );

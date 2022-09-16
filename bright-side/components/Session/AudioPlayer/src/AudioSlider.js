@@ -171,6 +171,7 @@ export default class AudioSlider extends PureComponent {
             <View
                 style={{
                     flex: 0,
+                    width:'100%',
                     flexDirection: 'column',
                     justifyContent: 'flex-start',
                     alignItems: 'stretch',
